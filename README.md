@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/logo.png" height="150vh" />  
+  <img src="images/bash_logo.svg" />  
 </div>
 
 <h2 align="center">
