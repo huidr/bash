@@ -1,10 +1,6 @@
 <div align="center">
-  <img src="images/bash_logo.svg" width="50%"/>  
+  <img src="images/bash_logo.svg" />  
 </div>
-
-<h2 align="center">
-  bash
-</h2>
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
 
