@@ -2,10 +2,6 @@
   <img src="images/bash_logo.svg" height="400vh"/>    
 </div>
 
-<h2 align="center">
-  bash
-</h2>
-
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
 
 1. [Audio](#audio)
@@ -13,7 +9,7 @@ Below is a list of useful bash commands for everyday work. I have just created t
 
 ## Audio
 
-Get bash script [here](audio.sh)
+Get bash script [here](audio.sh).
 
 ### Trimming audio
 
@@ -24,7 +20,7 @@ The option -ss 20 starts trimming from 20 sec of the input audio and -t 10 signi
 
 ## PDFs
 
-Get bash script [here](pdf.sh)
+Get bash script [here](pdf.sh).
 
 ### Turn images into PDFs
 
