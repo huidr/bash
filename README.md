@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/bash_logo.svg" height="400vh"/>    
+  <img src="images/bash_logo.svg" />
 </div>
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
