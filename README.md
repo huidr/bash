@@ -62,3 +62,10 @@ To convert all JPG images in the directory, use
 convert *.jpg output.pdf
 ```
 
+### Extract pages from PDFs
+
+To extract pages 10-12, 15 and 21-22 from `input.pdf` and compile them into `out.pdf`, use
+
+```bash
+pdftk input.pdf cat 10-12 15 21-22 output out.pdf
+```
