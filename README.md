@@ -4,20 +4,43 @@
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
 
-1. [Audio and Video](#audio-and-video)
-2. [Dates and Times](#dates-and-times)
-3. [PDFs](#pdfs)
+1. [Images](#images) 
+2. [Audio and Video](#audio-and-video)
+3. [Dates and Times](#dates-and-times)
+4. [PDFs](#pdfs)
+
+# Images
+
+### Resize images 
+
+To reduce the size of the image `input.jpg` to 40%, run
+
+```bash
+convert -resize 40% input.jpg output.jpg
+```
+
+The target size may also be specified:
+
+```bash
+convert -resize 720x480 input.jpg output.jpg
+```
 
 ## Audio and Video
 
 Get bash script [here](audio_and_video.sh).
 
-### Trimming audio
+### Trim audio
 
 ```bash
 ffmpeg -ss 20 -i input.mp3 -t 10 -c copy output.mp3
 ```
 The option `-ss` 20 starts trimming from 20 sec of the input audio and `-t` 10 signifies that output audio length is 10 sec.
+
+### Concatenate audio
+
+```bash
+mp3wrap output.mp3 input1.mp3 input2.mp3
+```
 
 ## Dates and Times
 
