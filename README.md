@@ -4,26 +4,12 @@
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
 
-1. [Images](#images) 
-2. [Audio and Video](#audio-and-video)
-3. [Dates and Times](#dates-and-times)
-4. [PDFs](#pdfs)
 
-# Images
-
-### Resize images 
-
-To reduce the size of the image `input.jpg` to 40%, run
-
-```bash
-convert -resize 40% input.jpg output.jpg
-```
-
-The target size may also be specified:
-
-```bash
-convert -resize 720x480 input.jpg output.jpg
-```
+1. [Audio and Video](#audio-and-video)
+2. [Dates and Times](#dates-and-times)
+3. [Download](#download)
+4. [Images](#images) 
+5. [PDFs](#pdfs)
 
 ## Audio and Video
 
@@ -68,6 +54,60 @@ Putting a year after `-y` prints calender of that year.
 
 ```bash
 date
+```
+
+## Download
+
+### Download with `wget`
+
+Simply put the URL of the file you want to download as an argument to `wget`.
+
+```bash
+wget [URL]
+```
+
+To download file and save under specific name, run
+
+```bash
+wget -0 [name] [URL]
+```
+
+To download in background, run
+
+```bash
+wget -b [URL]
+```
+
+### Resume download with `wget`
+
+To resume/continue downloading a file, run
+
+```bash
+wget -c [URL]
+```
+
+### Download multiple files with `wget`
+
+Make a list of all the URLs (one per line) in a text file `downloadlist.txt` and then run
+
+```bash
+wget -i downloadlist.txt
+```
+
+## Images
+
+### Resize images 
+
+To reduce the size of the image `input.jpg` to 40%, run
+
+```bash
+convert -resize 40% input.jpg output.jpg
+```
+
+The target size may also be specified:
+
+```bash
+convert -resize 720x480 input.jpg output.jpg
 ```
 
 ## PDFs
