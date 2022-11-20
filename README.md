@@ -132,3 +132,17 @@ To extract pages 10-12, 15 and 21-22 from `input.pdf` and compile them into `out
 ```bash
 pdftk input.pdf cat 10-12 15 21-22 output out.pdf
 ```
+
+### Extract imbedded images from PDFs
+
+To extract images in their original formats:
+
+```bash
+pdfimages -all input.pdf /tmp/out
+```
+
+To extract images in JPEG:
+
+```bash
+pdfimages -j input.pdf /tmp/out
+```
