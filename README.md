@@ -28,6 +28,23 @@ The option `-ss` 20 starts trimming from 20 sec of the input audio and `-t` 10 s
 mp3wrap output.mp3 input1.mp3 input2.mp3
 ```
 
+### Merge video and audio
+
+With audio re-encoding
+```bash
+ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac output.mp4
+```
+
+Without audio re-encoding
+```bash
+ffmpeg -i video.mp4 -i audio.wav -c copy output.mkv
+```
+
+Replacing audio stream
+```bash
+ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output.mp4
+```
+
 ## Dates and Times
 
 Get bash script [here](dates_and_times.sh).
