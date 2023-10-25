@@ -127,6 +127,18 @@ The target size may also be specified:
 convert -resize 720x480 input.jpg output.jpg
 ```
 
+### Metadata
+
+We are using [ImageMagick](https://imagemagick.org/) here. To read metadata, use
+```bash
+identify -verbose /path/image.jpg | grep exif
+```
+
+To remove all metadata, use
+```bash
+mogrify -strip /path/image.jpg
+```
+
 ## PDFs
 
 Get bash script [here](pdf.sh).
