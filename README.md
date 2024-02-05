@@ -4,7 +4,6 @@
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
 
-
 1. [Audio and Video](#audio-and-video)
 2. [Dates and Times](#dates-and-times)
 3. [Download](#download)
@@ -43,6 +42,12 @@ ffmpeg -i video.mp4 -i audio.wav -c copy output.mkv
 Replacing audio stream
 ```bash
 ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output.mp4
+```
+
+### Merge video and subtitle (.srt) file
+
+```bash
+ffmpeg -i video.mp4 -i subtitle.srt -c copy -c:s mov_text output.mp4
 ```
 
 ## Dates and Times
