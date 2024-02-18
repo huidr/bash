@@ -180,3 +180,10 @@ To extract images in JPEG:
 ```bash
 pdfimages -j input.pdf /tmp/out
 ```
+
+### Merge several pdf files into one pdf file
+
+```
+bash
+pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
+```
