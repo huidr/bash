@@ -183,7 +183,6 @@ pdfimages -j input.pdf /tmp/out
 
 ### Merge several pdf files into one pdf file
 
-```
-bash
+```bash
 pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
 ```
