@@ -132,6 +132,14 @@ The target size may also be specified:
 convert -resize 720x480 input.jpg output.jpg
 ```
 
+### Convert transparent PNG to JPG by adding background
+
+The following example converts image.png to image.jpg by adding a white background
+
+```bash
+convert image.png -background white -flatten -alpha off image.jpg
+```
+
 ### Metadata
 
 We are using [ImageMagick](https://imagemagick.org/) here. To read metadata, use
