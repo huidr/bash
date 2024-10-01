@@ -156,7 +156,7 @@ mogrify -strip /path/image.jpg
 
 Get bash script [here](pdf.sh).
 
-### Turn images into PDFs
+### Convert images into PDFs
 
 ```bash
 convert 1.jpg 2.jpg output.pdf
@@ -193,4 +193,10 @@ pdfimages -j input.pdf /tmp/out
 
 ```bash
 pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
+```
+
+### Reduce pdf file size
+
+```bash
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
 ```
