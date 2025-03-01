@@ -3,12 +3,13 @@
 </div>
 
 Below is a list of useful bash commands for everyday work. I have just created the repository, more contents shall be added soon.
-
+ 
 1. [Audio and Video](#audio-and-video)
 2. [Dates and Times](#dates-and-times)
 3. [Download](#download)
 4. [Images](#images) 
 5. [PDFs](#pdfs)
+6. [Extras](#extras)
 
 ## Audio and Video
 
@@ -200,3 +201,18 @@ pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
 ```bash
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
 ```
+
+## Extras
+
+To columnate lists:
+
+```bash
+column -s, -t < file.csv
+```
+
+The above can be piped with less:
+```bash
+column -s, -t < file.csv | less -N -S
+```
+
+
